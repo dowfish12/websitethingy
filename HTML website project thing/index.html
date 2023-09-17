@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .username {
+        font-weight: bold;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="funny website i made that does stuff" />
+    <title>dowfish12 website thing</title>
+    <style>
+      em {
+        color: red;
+        font-style: bold;
+      }
+      strong {
+        color: blueviolet;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <p class="username">
+        heya!!! this is a <strong>cool</strong> website i made that does stuff
+      </p>
+    </h1>
+
+    <h2><p>i'll have updates here for like holidays, and other stuff</p></h2>
+    <h2>
+      <p>oh you're <em>BORED?</em> too bad!</p>
+    </h2>
+    <h2>
+      <p>
+        jk, have this button that does nothing besides count up every time u
+        click it!!!!
+      </p>
+      <h6>
+        i totally didnt steal the code from vkash8578 on geeksforgeeks.org ;)
+      </h6>
+    </h2>
+    <button id="btn">
+      bored? spam click this button <span id="btn-counter"></span>
+    </button>
+    <h3>
+      <p>Button Clicked <span id="display">0</span> Times</p>
+    </h3>
+  </body>
+  <script type="text/javascript">
+    let count = 0;
+    let btn = document.getElementById("btn");
+    let disp = document.getElementById("display");
+
+    btn.onclick = function () {
+      count++;
+      disp.innerHTML = count;
+    };
+  </script>
+</html>
